@@ -29,6 +29,8 @@ export default function App() {
 function Accordion({ data }) {
   return (
     <div className="accordion">
+            <h2>FAQs</h2>
+
       {data.map((el, i) => (
         <AccordionItem title={el.title} text={el.text} num={i} key={i} />
       ))}
